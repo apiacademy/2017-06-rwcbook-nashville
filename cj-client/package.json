@@ -1,0 +1,40 @@
+{
+  "name": "TPS-CjClientTypes",
+  "version": "1.0.0",
+  "description": "TPS - Task Processing Service Collection+JSON Client (w/ input types) for Web API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "0.10.25"
+  },
+  "dependencies" : { 
+    "uritemplate" : "0.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RWCBook/cj-client-types.git"
+  },
+  "keywords": [
+    "hypermedia",
+    "amundsen",
+    "HTML",
+    "representor",
+    "O'Reilly",
+    "RESTful",
+    "RESTful Web Clients",
+    "JSON",
+    "RPC",
+    "CRUD",
+    "Client",
+    "Collection",
+    "Cj",
+    "Amundsen",
+    "notes",
+    "select",
+    "textarea",
+    "suggest"
+  ],
+  "license": "MIT"
+}
