@@ -21,6 +21,7 @@ Bring a laptop that has access to (or has installed locally):
  * NodeJS (to host local web projects)
  * Chrome Web browser (preferred, but not required)
  * Your favorite text editor (I will use VIM on stage)
+ * Manually add the SSID : `vummiv` (no password)
 
 ### Accounts
 The following free accounts will come in handy:
