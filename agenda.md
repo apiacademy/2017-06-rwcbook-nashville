@@ -1,6 +1,10 @@
-## NETWORK SSID : "vummiv" (no quotes, no password) <-- add this manually
+## NETWORK SSID 
+"vummiv" (no quotes, no password) <-- add this manually
 
-## Agenda
+### github repo:
+`https://github.com/apiacademy/2017-06-rwcbook-nashville`
+
+### Agenda
 
 * 8:00 - 8:15 : Introductions
 * 8:15 - 9:00 : Collection+JSON and Hypermedia
