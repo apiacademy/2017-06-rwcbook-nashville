@@ -1,4 +1,4 @@
-## Cj-CLient Code
+## Cj-Client Code
 
 Code samples for the RESTful Web Clients Cj Client sessions
 
