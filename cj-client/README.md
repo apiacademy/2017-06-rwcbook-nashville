@@ -9,6 +9,8 @@ Load (from the Web browser) `http://localhost:8181/files/cj-client.html`
 ### Exercises
 See the folder `/files/` for a series of code exercies.
 
+NOTE: update the `cj-client.html` file to point to the target JS library file.
+
 #### Starter files:
 
 * cj-client-0.js
