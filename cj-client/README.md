@@ -2,12 +2,12 @@
 
 Code samples for the RESTful Web Clients Cj Client sessions
 
-Run locally using node command line: +node app.js+
+Run locally using node command line: `node app.js`
 
-Load (from the Web browser) +http://localhost:8181/files/cj-client.html+
+Load (from the Web browser) `http://localhost:8181/files/cj-client.html`
 
 ### Exercises
-See the folder +/files/+ for a series of code exercies.
+See the folder `/files/` for a series of code exercies.
 
 #### Starter files:
 
