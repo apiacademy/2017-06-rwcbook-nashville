@@ -122,6 +122,104 @@ function cj() {
     var segment, buttons, table;
     var p, img, a;
 
+    elm = d.find("items");
+    d.clear(elm);
+    if(g.cj.collection.items) {
+      coll = g.cj.collection.items;
+      ul = d.node("div");
+
+      for(var item of coll) {
+        segment = d.node("div");
+        segment.className = "ui segment";
+        buttons = d.node("div");
+        buttons.className = "ui mini buttons";
+        
+        // item link
+        /*
+        a = d.anchor(
+          {
+            href:item.href,
+            rel:item.rel,
+            className:"item link ui basic blue button",
+            text:item.prompt||"Read"
+          }
+        );
+        a.onclick = httpGet;
+        d.push(a,buttons);
+        
+        // edit link
+        if(isReadOnly(item)===false && hasTemplate(g.cj.collection)===true) {
+          a = d.anchor(
+            {
+              href:item.href,
+              rel:"edit",
+              className:"item action ui positive button",
+              text:"Edit"
+            }
+          );
+          a.onclick = cjEdit;
+          d.push(a, buttons);
+        }
+
+        // delete link
+        if(isReadOnly(item)===false) {
+          ... add delete link ...
+        }
+
+        d.push(buttons,segment);
+
+        if(item.links) {
+          secondary_buttons = d.node("div");
+          secondary_buttons.className = "ui mini buttons right floated";
+
+          for(var link of item.links) {
+            // render as images, if asked
+            if(isImage(link)===true) {
+              p = d.node("p");
+              p.className = "ui basic button";
+              img = d.image(
+                {
+                  className:"image "+link.rel,
+                  rel:link.rel,
+                  href:link.href
+                }
+              );         
+              d.push(img, p);
+              d.push(p,secondary_buttons);
+            }
+            else {
+              a = d.anchor(
+                {
+                  className:"ui basic blue button",
+                  href:link.href,
+                  rel:link.rel,
+                  text:link.prompt
+                }
+              );
+              a.onclick = httpGet;
+              d.push(a,secondary_buttons);
+            }
+          }
+          d.push(secondary_buttons,segment);
+        }
+
+        d.push(segment,elm);
+        */
+
+        table = d.node("table");
+        table.className = "ui table";
+        for(var data of item.data) {
+         /* ... add data rows ... */
+        }
+        d.push(table,segment);
+      }
+    }
+    if (elm.hasChildNodes()) {
+      elm.style.display = "block";
+    } else {
+      elm.style.display = "none";
+    }
+
   }
   
   // handle query collection
