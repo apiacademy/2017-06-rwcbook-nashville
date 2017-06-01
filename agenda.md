@@ -1,3 +1,5 @@
+## NETWORK SSID : "vummiv" (no quotes, no password) <-- add this manually
+
 ## Agenda
 
 * 8:00 - 8:15 : Introductions
