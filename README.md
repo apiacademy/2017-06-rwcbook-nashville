@@ -10,5 +10,5 @@ https://www.musiccitycode.com/schedule/building-restful-web-clients
 
  * [Prerequsites](prerequisites.md)
  * [Agenda](agenda.md)
- * [Code](code/README.md)
+ * [Code](cj-client/README.md)
 
