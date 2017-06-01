@@ -304,6 +304,48 @@ function cj() {
     var elm, coll;
     var form, fs, header, p, lbl, inp;
 
+    elm = d.find("template");
+    d.clear(elm);
+    if(hasTemplate(g.cj.collection)===true) {
+      coll = g.cj.collection.template.data;
+      form = d.node("form");
+      /* ... set add form ... */      
+      for(var data of coll) { 
+        p = d.input(
+          {
+            prompt:data.prompt+"&nbsp;",
+            name:data.name,
+            value:data.value,
+            required:data.required,
+            readOnly:data.readOnly,
+            pattern:data.pattern,
+            type:data.type,
+            max:data.max,
+            min:data.min,
+            maxlength:data.maxlength,
+            size:data.size,
+            step:data.step,
+            cols:data.cols,
+            rows:data.rows,
+            suggest:data.suggest
+          },
+          (g.cj.collection.related?g.cj.collection.related:null)
+        );
+        d.push(p,fs);
+      }
+      p = d.node("p");
+      inp = d.node("input");
+      inp.className = "ui positive mini submit button";
+      inp.type = "submit";
+      d.push(inp, p, fs, form, elm);
+    }
+
+    if (elm.hasChildNodes()) {
+      elm.style.display = "block";
+    } else {
+      elm.style.display = "none";
+    }
+
   }
   
   // handle error object
